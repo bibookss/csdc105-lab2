@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Activity</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./form.js"></script>
+</head>
+<body>
+    <div>
+        <form>
+            <h1>Registration Form</h1>
+            <p id="formMessage" class="success-warning"></p>
+            First Name: <br />
+            <input type="text" class="full" name="firstname" /> <br />
+            Last Name: <br />
+            <input type="text" class="full" name="lastname" /> <br />
+            Nick Name: <br /> 
+            <input type="text" class="full" name="nickname" /> <br />
+            Email:<br /> 
+            <input type="email" class="full" name="email" /> <br />
+            Password: <br /> 
+            <input type="password" class="full" name="password" id="password" /> <br />
+            <p id="passMessage" class="input-warning"></p> 
+            Date of Birth: <br /> 
+            <input type="date" class="full" name="birthdate" id="birthdate"/>  <br />
+            <p id="ageMessage" class="input-warning"></p>
+            Gender:<br /> 
+            <input type="radio" name="male" value="male" /> Male
+            <input type="radio" name="female" value="female" /> Female 
+            <input type="radio" name="other" value="other" /> Other <br />
+            Mobile: <br /> <input type="number" class="full" name="mobile" /> <br />
+            Address: <br /> <textarea name="address" id="" cols="30" rows="10"></textarea> <br />
+            <input type="button" name="submit" value="Submit" id="submit" onclick="validateForm()">
+            <input type="submit" name="reset" value="Reset" id="reset">
+        </form>
+    </div>
+</body>
+</html>
+
