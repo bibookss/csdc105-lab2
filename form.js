@@ -10,7 +10,7 @@ const isValidPassword = () => {
 }
 
 const isValidAge = () => {
-    const birthDate = new Date(document.getElementsByName("birthdate").value);
+    const birthDate = new Date(document.getElementById("birthdate").value);
     const ageDate = new Date(Date.now() - birthDate.getTime());
 
     if (Math.abs(ageDate.getUTCFullYear() - 1970) < 21) {
